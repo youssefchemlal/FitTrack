@@ -20,3 +20,5 @@ select distinct gender from members ;
 
 05=>
 
+select * from trainers limit 3;
+
