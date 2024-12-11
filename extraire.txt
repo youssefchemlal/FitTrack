@@ -1,0 +1,61 @@
+create database FitnessManagement;
+use FitnessManagement;
+create table members (
+member_id int(11),
+first_name varchar(50),
+last_name varchar(50),
+gender enum('male','female','other'),
+date_of_birthday date,
+phone_number varchar(15),
+email varchar(100)
+);
+
+create table workout_plans (
+plan_id int(11),
+member_id int(11),
+trainer_id int(11),
+instrution varchar(255)
+);
+
+create table memberships (
+membership_id int(11),
+member_id int(11),
+room_id int(11),
+start_date date
+);
+
+create table rooms(
+room_id int(11),
+room_numbers varchar(10),
+room_type enum('cardio','weights','studio'),
+capacity int(10)
+);
+
+create table appointments(
+appointement_id int(11),
+appointment_date date,
+apointement_time time
+);
+
+create table departements(
+departement_id int(11),
+departement_name varchar(50),
+location varchar(100)
+);
+
+
+create table trainers (
+trainer_id int(11),
+first_name varchar(50),
+last_name varchar(50),
+specialization varchar(50),
+departement_id int(11)
+);
+
+
+
+
+
+
+
+

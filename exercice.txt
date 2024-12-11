@@ -1,0 +1,22 @@
+01 => 
+
+insert into members (first_name,last_name,gender,date_of_birthday,phone_number)
+values('Alex','Johnson','male','1990-07-15','1234567890');
+
+select * from members;
+
+
+02=>
+
+select * from departements ;
+
+03=>
+
+select * from membres order by date_of_birthday asc;
+
+04=>
+
+select distinct gender from members ; 
+
+05=>
+
